@@ -57,6 +57,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+-- set keymap for returning to file explorer
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+
 -- enable true color support
 vim.opt.termguicolors = true
 
