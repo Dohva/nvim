@@ -247,6 +247,9 @@ for server, config in pairs(lsp_servers) do
 
       vim.keymap.set("n", "grf", vim.lsp.buf.format,
         { buffer = bufnr, desc = "vim.lsp.buf.format()", })
+
+      vim.keymap.set("n", 'gh', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
+      vim.keymap.set("n", 'ge', vim.diagnostic.open_float, { desc = 'Open Floating Diagnostic' })
     end,
   })
 end
@@ -283,4 +286,3 @@ require("which-key").setup({
 
 -- uncomment to enable automatic plugin updates
 -- vim.pack.update()
-
