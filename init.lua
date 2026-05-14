@@ -75,8 +75,27 @@ vim.opt.clipboard = "unnamedplus"
 -- save undo history
 vim.opt.undofile = true
 
+-- case-insensitive searching UNLESS \C or one or more capital letters in the search term
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- decrease update time
+vim.opt.updatetime = 250
+
+-- decrease mapped sequence wait time
+-- displays which-key popup sooner
+vim.opt.timeoutlen = 300
+
+-- configure how new splits should be opened
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
 -- keep signcolumn on by default
 vim.opt.signcolumn = "yes"
+
+-- Keep 8 lines visible above/below cursor
+vim.opt.scrolloff = 9999
+
 
 -- sets how neovim will display certain whitespace characters in the editor.
 --  see `:help 'list'`
